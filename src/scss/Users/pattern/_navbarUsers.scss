@@ -1,0 +1,184 @@
+.usersNavbar {
+    background-color: $main-color-grey;
+    padding: 20px 20px 20px 10px;
+    box-shadow: 0px 2px 4px $main-color-grey;
+    margin-bottom: 50px;
+    color: white;
+
+    &__list {
+        position: absolute;
+        width: 100%;
+        gap: 30px;
+        padding: 0px;
+        text-align: center;
+        font-size: 20px;
+        display: none;
+
+        &__sublist {
+            display: none;
+            padding: 0px;
+            font-size: 16px;
+        }
+
+        &__sublist.active {
+            display: block;
+        }
+
+        &__sublist.active * {
+            margin-top: 20px;
+        }
+
+        &__link {
+            color: white;
+        }
+
+        &__subheading {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+            gap: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.25);
+            padding-top: 30px;
+            width: 50%;
+            margin: auto;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    }
+
+    &__list.active {
+        background-color: $main-color-grey;
+        right: 0px;
+        height: 100%;
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logoContainer {
+            display: flex;
+            gap: 10px;
+
+            &__logo {
+                height: 24px;
+            }
+
+            &__title {
+                font-size: 22px;
+                font-family: 'Patua One';
+                font-weight: 500;
+                color: white;
+                margin: 0px;
+            }
+        }
+
+        &__openIcon {
+            color: white;
+            font-size: 24px;
+        }
+
+        &__openIcon i {
+            cursor: pointer;
+        }
+    }
+}
+
+.disconnected {
+    text-align: center;
+    font-style: italic;
+    margin-top: 30px;
+    
+}
+
+
+@media screen and (min-width: 769px) {
+
+    .usersNavbar {
+        width: 20%;
+        height: 500px;
+        position: fixed;
+        height: 100%;
+        padding: 0px;
+
+        &__header {
+            background-color: $main-color-darkGrey;
+            height: 73px;
+            align-items: start;
+
+            &__logoContainer {
+                align-items: center;
+                height: 100%;
+                width: fit-content;
+                margin: auto;
+
+                &__logo {
+                    height: 30px;
+                }
+            }
+
+            &__logoContainer .link {
+                display: flex;
+                gap: 10px;
+            }
+
+            &__openIcon {
+                display: none;
+            }
+        }
+
+
+        &__list {
+            position: absolute;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            font-size: 16px;
+            gap: 0px;
+            text-align: left;
+
+
+            &__subheading {
+                border: none;
+                padding: 0px;
+                margin: 15px;
+                width: 100%;
+                justify-content: flex-start;
+                font-size: 16px;
+                transition-property: font-size;
+                transition-duration: 0.3s;
+            }
+
+            &__subheading:hover {
+                font-size: 18px;
+            }
+
+            &__sublist.active {
+                margin: 0px;
+                margin-left: 30px;
+            }
+
+            &__sublist.active * {
+                margin-top: 10px;
+                font-size: 14px;
+            }
+        }
+
+        &__list.active {
+            position: absolute;
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            font-size: 16px;
+            gap: 0px;
+            text-align: left;
+        }
+    }
+}

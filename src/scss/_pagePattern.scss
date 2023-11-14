@@ -1,0 +1,119 @@
+#category {
+    text-align: center;
+    border-bottom: 1px solid $separator;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#category h2 {
+    font-size: 26px;
+    color: $main-color-darkGrey;
+    font-family: 'Patua One';
+    font-weight: 500 !important;
+}
+
+#category h3 {
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    font-family: 'Patua One';
+    font-weight: 500 !important;
+}
+
+.pagePattern, .usersPage, .tablePage {
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 100px;
+    position: relative;
+    min-height: 500px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    &__content * img {
+        width: 100%;
+    }
+
+    &__subheading {
+        font-size: 20px;
+        color: $main-color-darkGrey;
+        font-family: 'Patua One';
+        text-align: left;
+        font-weight: 500 !important;
+    }
+}
+
+.tablePage__content {
+    width: 100%;
+}
+
+.pagePattern__cardsContent__button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+@media screen and (min-width: 480px) {
+
+    #category h2 {
+        font-size: 34px;
+    }
+    
+    #category h3 {
+        font-size: 18px;
+    }
+}
+
+
+
+@media screen and (min-width: 769px) {
+
+    #category h2 {
+        font-size: 40px;
+    }
+
+    .pagePattern {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 100px;
+
+        &__content {
+            width: 70%;
+        }
+    }
+    
+    .usersPage {
+        margin-left: 20%;
+        margin-top: 100px;
+
+        &__content {
+            width: 70%;
+        }
+    }
+
+    .tablePage {
+        margin-left: 20%;
+        margin-top: 100px;
+        padding: 0px 150px;
+    }
+}
+
+
+@media screen and (min-width: 1280px) {
+
+    .usersPage {
+        padding: 0 150px !important;
+    }
+    
+    .pagePattern {
+        width: 70%;
+    }
+}

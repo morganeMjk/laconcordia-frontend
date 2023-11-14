@@ -1,0 +1,49 @@
+.albumCard {
+    border-radius: 2px;
+    width: 100%;
+    margin: auto;
+
+    &__title {
+        background-color: $main-color-darkGrey;
+        text-align: center;
+        padding: 10px;
+    }
+
+    &__img {
+        overflow: hidden;
+        object-fit: cover;
+        object-position: center;
+        height: 200px;
+        width: 100%;
+    }
+}
+
+.albumCard a {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 6px 12px rgb(200, 200, 200);
+}
+
+
+@media screen and (min-width: 480px) {
+    .albumCard {
+        width: 200px;
+
+        &__img {
+            height: 150px;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1280px) {
+    .albumCard {
+        width: 220px;
+
+        &__img {
+            height: 200px;
+        }
+    }
+}

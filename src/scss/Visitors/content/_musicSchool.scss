@@ -1,0 +1,41 @@
+.musicSchool {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__professor {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__details {
+        text-align: justify;
+        margin-top: 20px;
+    }
+
+    &__informations {
+        text-align: justify;
+    }
+
+    &__address {
+        font-style: italic;
+        font-weight: 300;
+    }
+
+    &__contact {
+        margin-top: 10px;
+        font-weight: 600;
+
+        &__color {
+            color: $main-color-green;
+        }
+    }
+}
+
+.musicSchool li {
+    list-style: disc;
+}
+
+.musicSchool ul {
+    padding-left: 20px;
+}

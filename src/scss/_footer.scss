@@ -1,0 +1,88 @@
+.footer {
+    background-color: $main-color-darkGrey;
+    padding: 20px;
+    color: white;
+    margin-top: auto;
+
+    &__logoContainer {
+        display: flex;
+        gap: 20px;
+
+        &__logo {
+            height: 28px;
+        }
+
+        &__title {
+            font-size: 18px;
+            font-family: 'Patua One';
+            margin: 0px;
+            font-weight: 500;
+        }
+    }
+
+    &__socialMediasContainer {
+        margin: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &__edmIns,
+        &__harFb,
+        &__harIns {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &__link {
+            color: white;
+        }
+    }
+
+    &__socialMediasContainer i {
+        font-size: 22px;
+    }
+
+    &__cguContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+
+        &__legalNotice {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        &__cgu {
+            font-weight: 600;
+            color: white;
+        }
+    }
+}
+
+
+@media screen and (min-width: 480px) {
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        &__socialMediasContainer{
+            flex-direction: row;
+        }
+
+        &__cguContainer {
+            flex-direction: row;
+        }
+    }
+
+    .usersFooter {
+        position: relative;
+        margin-top: auto;
+        bottom: 0;
+        width: 100%;
+    }
+}

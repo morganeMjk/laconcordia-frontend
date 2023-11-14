@@ -1,0 +1,38 @@
+@import './normalize';
+@import './variables.scss';
+
+@import './base';
+
+@import './pagePattern';
+
+@import './modal';
+
+@import './form';
+
+@import './button';
+
+@import './Cards/mediasCard';
+@import './Cards/cards';
+@import './Cards/albumsCard';
+@import './Cards/cardsContainer';
+@import './Cards/updateMediasCard';
+
+@import './Visitors/pattern/headerVisitors';
+@import './Visitors/pattern/homeNavbar';
+@import './Visitors/pattern/navbar';
+
+@import './Visitors/content/about';
+@import './Visitors/content/band';
+@import './Visitors/content/musicSchool';
+@import './Visitors/content/signIng';
+@import './Visitors/content/signUp';
+@import './Visitors/content/committee';
+
+@import './Users/pattern/headerUsers';
+@import './Users/pattern/navbarUsers';
+
+@import './Users/content/profil';
+@import './Users/content/table';
+@import './Users/content/messages';
+
+@import './footer';

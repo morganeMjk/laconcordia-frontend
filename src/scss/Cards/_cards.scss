@@ -1,0 +1,84 @@
+.cards {
+    width: 100%;
+    box-shadow: 0px 6px 12px rgb(200, 200, 200);
+    border-radius: 2px;
+    max-width: 300px;
+
+    &__img {
+        overflow: hidden;
+        object-fit: cover;
+        object-position: center;
+        max-height: 180px;
+        width: 100%;
+    }
+
+    &__content {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-height: 180px;
+        height: 50%;
+
+
+        &__title {
+            font-weight: 500;
+            height: fit-content;
+            overflow: hidden;
+        }
+
+
+        &__summary {
+            font-size: 15px;
+            font-weight: 400;
+            overflow: hidden;
+            height: 50px;
+        }
+
+        &__date {
+            font-size: 12px;
+            align-self: flex-end;
+            vertical-align: bottom;
+            margin-top: auto;
+            font-weight: 500;
+        }
+    }
+}
+
+.usersPage .cards__img {
+    max-height: 150px;
+}
+
+
+.cards a {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+@media screen and (min-width: 480px) {
+
+    .cards {
+
+        &__img {
+            height: 150px;
+        }
+    }
+
+    .usersPage .cards__img {
+        max-height: 100px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .usersPage .cards__img {
+        max-height: 200px;
+    }
+
+    .usersPage .cards__content {
+        max-height: 200px ;
+    }
+}

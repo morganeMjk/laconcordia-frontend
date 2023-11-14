@@ -1,0 +1,40 @@
+.messageModal {
+
+    &__content {
+        text-align: center;
+        margin: 30px 0px;
+    }
+
+    &__contact {
+        margin-bottom: 10px;
+    }
+}
+
+.mailto {
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: $main-color-green;
+}
+
+.mailtoLink {
+    color: $main-color-darkGrey;
+    font-style: italic;
+}
+
+.phoneLink {
+    color: black;
+}
+
+.phoneLinkIcon {
+    color: $main-color-green;
+    margin-right: 5px;
+}
+
+
+@media screen and (min-width: 480px) {
+
+    .messageModal {
+        width: 600px;
+    }
+}

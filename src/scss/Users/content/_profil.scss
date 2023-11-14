@@ -1,0 +1,23 @@
+.profil {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__contact {
+        color: $main-color-green;
+    }
+}
+
+.notifications {
+    flex-direction: row;
+    align-items: start;
+    gap: 10px;
+    color: $main-color-grey;
+    margin-bottom: 20px;
+}

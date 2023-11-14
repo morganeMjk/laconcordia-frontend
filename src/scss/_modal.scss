@@ -1,0 +1,57 @@
+.modal {
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+
+
+    &__mediasTitle {
+        color: white;
+        text-align: center;
+        font-style: italic;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+
+        &__title {
+            font-size: 18px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__form input {
+        width: 100%;
+        margin-top: 10px;
+        border: 1px solid $main-color-green;
+        background-color: rgb(235, 235, 235);
+        height: 30px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 480px) {
+
+    .modal {
+
+        &__medias {
+            max-height: 450px;
+            margin: 0 auto;
+            overflow: hidden;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        &__form input {
+            width: 350px;
+        }
+    }
+}
+

@@ -1,0 +1,21 @@
+.signUp p {
+    color: $main-color-grey;
+}
+
+.signUp {
+
+    &__link {
+        color: $main-color-green;
+    }
+
+    &__cgu {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    .signUp__connection {
+        margin-bottom: 50px;
+    }
+}

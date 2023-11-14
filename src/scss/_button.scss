@@ -1,0 +1,178 @@
+button, .button {
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500 !important;
+}
+
+.greenButton {
+    background-color: $main-color-green;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Patua One';
+}
+
+.headerVisitorButton a {
+    font-family: 'Patua One';
+    font-size: 16px;
+}
+
+.firstButton {
+    background-color: $main-color-darkGrey;
+    font-size: 14px;
+}
+
+.secondButton {
+    background-color: $main-color-grey;
+    font-size: 14px;
+
+}
+
+.mediasActionsContainer__button {
+    padding: 10px 20px;
+    margin: 0px;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+}
+
+.sendButton {
+    align-self: flex-end;
+}
+
+.archiveButton {
+    align-self: center;
+}
+
+.importButton {
+    align-self: center;
+    max-width: 300px;
+    text-align: center;
+}
+
+.addButton {
+    display: block;
+}
+
+.closeButton {
+    background-color: rgba(0, 0, 0, 0);
+    color: $main-color-green;
+    font-size: 30px;
+    align-self: flex-end;
+    padding: 0px;
+}
+
+.readButton {
+    margin-top: 20px;
+    width: 200px;
+    align-self: center;
+}
+
+.tableButton {
+    border: none;
+    padding: 0;
+    width: 40px;
+    height: 30px;
+    font-size: 16px;
+    background-color: $main-color-green
+}
+
+.button--blue {
+    background-color: rgb(69, 69, 224);
+}
+
+.button--red {
+    background-color: rgb(252, 31, 31);
+}
+
+.buttonLink {
+    padding: 0px;
+}
+
+.undoButton {
+    background-color: rgba(0, 0, 0, 0) ;
+    color: red;
+    padding: 5px;
+    font-size: 24px;
+}
+
+.returnButton {
+    color: $main-color-green;
+    font-size: 30px;
+    display: block;
+}
+
+.suspendButton {
+    background-color: red;
+    margin: auto;
+}
+
+.activeButton {
+    margin: auto;
+}
+
+.deletedButton {
+    background-color: red;
+    align-self: flex-end;
+}
+
+
+.button--flash {
+    position: relative;
+    animation: pulse 1.5s ease-in-out infinite;
+    &::after {
+        content: "!";
+        position: absolute;
+        top: 0;
+        border: 1px solid red;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        background-color: red;
+        color: white;
+        font-family: sans-serif;
+        font-size: 10px;
+        left: 0;
+        transform: translate(-50%, -50%);
+
+        @media screen and (min-width: 480px) {
+            left: inherit;
+            right: 0;
+            transform: translate(50%, -50%);
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        color: white;
+        // color: $main-color-grey;
+        transform: font-size(1);
+    }
+
+    50% {
+        color: rgba(255, 255, 255, 0.1);
+        transform: font-size(1);
+    }
+
+    100% {
+        color: white;
+        // color: $main-color-grey;
+        transform: font-size(1);
+    }
+}
+
+
+@media screen and (min-width: 480px) {
+
+    .archiveButton {
+        align-self: initial;
+    }
+
+    .saveButton {
+        align-self: flex-end;
+    }
+}

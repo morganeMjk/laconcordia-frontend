@@ -1,0 +1,18 @@
+.signIn {
+
+    &__details {
+        color: $main-color-grey;
+
+        &__link {
+            color: $main-color-green;
+        }
+    }
+}
+
+.italicLink {
+    color: $main-color-darkGrey;
+    text-decoration: none;
+    display: block;
+    width: fit-content;
+    font-style: italic;
+}

@@ -1,0 +1,138 @@
+.form {
+    border: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    &__box input {
+        width: 100%;
+    }
+
+    &__inputError {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 8px;
+        color: red;
+    }
+
+    &__inputError label {
+        font-style: italic;
+        font-size: 12px;
+        width: 100%;
+    }
+
+    &__checkbox {
+        display: flex;
+        gap: 5px;
+        color: $main-color-grey;
+    }
+
+    &__checkbox input {
+        width: 30px !important;
+        height: 20px !important;
+    }
+}
+
+.add {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.form input,
+.form textarea,
+.form select,
+.searchInput {
+    border: 1px solid $main-color-green;
+    background-color: rgb(235, 235, 235);
+    font-size: 16px;
+    padding-left: 10px;
+    width: 100%;
+    border-radius: 1px;
+}
+
+.form input,
+.form select,
+.searchInput {
+    height: 35px;
+}
+
+.form textarea {
+    resize: vertical;
+    padding-top: 5px;
+    min-height: 150px;
+    max-height: 300px;
+}
+
+.form select {
+    color: rgb(122, 122, 122);
+}
+
+.form .downloadInput {
+    background: none;
+    border: none;
+    display: none;
+}
+
+.label {
+    color: $main-color-grey;
+    font-family: "Patua One";
+    font-size: 18px;
+}
+
+.downloadImage {
+    width: 150px;
+    margin: auto;
+    max-height: 300px;
+    overflow: hidden;
+    object-fit: cover;
+    box-shadow: 0px 6px 12px rgb(200, 200, 200);
+    border-radius: 2px;
+}
+
+.searchInput {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.notificationContainer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-style: italic;
+}
+
+.notificationCheckbox {
+    width: 18px !important;
+}
+
+
+
+@media screen and (min-width: 1280px) {
+
+    .form {
+
+        &__box {
+            flex-direction: row !important;
+        }
+
+        &__box input {
+            width: 100%;
+        }
+    }
+
+    .downloadImage {
+        width: 400px;
+    }
+}
+

@@ -1,0 +1,25 @@
+table {
+    width: 100%;
+}
+
+td {
+    height: 50px;
+}
+
+.buttonCell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sheetTable {
+    margin-bottom: 60px;
+}
+
+
+
+
+.sheetTable td {
+    width: 30% ;
+}
